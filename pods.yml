@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: javapod
+  name: javaapp
   labels:
-    app: javapod
+    app: javaapp
 spec:
   containers:
     - name: javaapp
