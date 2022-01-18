@@ -3,7 +3,7 @@ apiVersion: apps/v1
 metadata:
    name: mydeployments
 spec:
-   replicas: 1
+   replicas: 10
    selector:     
     matchLabels:
      name: deployment
