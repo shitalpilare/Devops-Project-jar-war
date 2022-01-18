@@ -1,12 +1,20 @@
-apiVersion: v1
-kind: Pod
+kind: Deployment
+apiVersion: apps/v1
 metadata:
-  name: javaapp
-  labels:
-    app: javaapp
+   name: mydeployments
 spec:
-  containers:
-    - name: javaapp
-      image: manashwi/javaapp:tagVersion
-      ports:
-        - containerPort: 8080
+   replicas: 1
+   selector:     
+    matchLabels:
+     name: deployment
+   template:
+     metadata:
+       name: javaapp
+       labels:
+         name: deployment
+     spec:
+      containers:
+        - name: javaapp
+          image: manashwi/javaapp:tagVersion
+          ports:
+            - containerPort: 8080
