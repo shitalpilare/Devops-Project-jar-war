@@ -4,7 +4,7 @@ metadata:
   name: javaservice
 spec:
   selector:
-    app: javaapp
+    name: javaapp
   ports:
     - port: 80
       targetPort: 8080
