@@ -6,7 +6,7 @@ spec:
    replicas: 1
    selector:     
     matchLabels:
-     name: deployment
+     name: javaapp
    template:
      metadata:
        name: javaapp
