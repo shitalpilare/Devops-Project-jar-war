@@ -11,7 +11,7 @@ spec:
      metadata:
        name: javaapp
        labels:
-         name: deployment
+         name: javaapp
      spec:
       containers:
         - name: javaapp
