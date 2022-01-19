@@ -6,12 +6,12 @@ spec:
    replicas: 1
    selector:     
     matchLabels:
-     name: javaapp
+     name: deployment
    template:
      metadata:
        name: javaapp
        labels:
-         name: javaapp
+         name: deployment
      spec:
       containers:
         - name: javaapp
