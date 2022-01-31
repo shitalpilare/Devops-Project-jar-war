@@ -69,9 +69,10 @@
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-release-plugin</artifactId>
+                <artifactId>maven-war-plugin</artifactId>
                 <version>2.2.2</version>
                 <configuration>
+                    <webXml>src\main\webapp\WEB-INF\web.xml</webXml>
                     <arguments>-Dgpg.passphrase=${gpg.passphrase}</arguments>
                 </configuration>
             </plugin>
