@@ -5,7 +5,7 @@
     <groupId>com.twilio</groupId>
     <artifactId>wiztowar</artifactId>
     <version>1.7-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
 
     <name>wiztowar</name>
     <description>WizToWar is a simple library that helps you deploy Dropwizard services as a WAR in a WAR container
@@ -57,8 +57,7 @@
             <groupId>com.yammer.dropwizard</groupId>
             <artifactId>dropwizard-core</artifactId>
             <version>${dropwizard.version}</version>
-            <scope>provided</scope>
-        </dependency>
+           </dependency>
         <dependency>
             <groupId>com.yammer.metrics</groupId>
             <artifactId>metrics-annotation</artifactId>
